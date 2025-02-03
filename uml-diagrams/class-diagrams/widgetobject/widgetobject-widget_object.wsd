@@ -1,0 +1,44 @@
+@startuml
+title widget_object module
+abstract AbstractWidgetObjectMixin {
+    widget_name: str
+    {abstract} get_relative_geometry(format_: str): WidgetGeometry
+}
+
+abstract WidgetObjectMixin {
+    widget: QWidget
+    get_relative_geometry(format_: str): WidgetGeometry
+
+}
+
+abstract ContainerWidgetObjectMixin {
+    children: List[WidgetObjectMixin]
+    {abstract} add_child(widget: WidgetObjectMixin)
+    get_child(index: int): WidgetObjectMixin
+    get_children(): List[WidgetObjectMixin]
+}
+
+abstract CompositeWidgetObjectMixin {
+    left_widget_object: WidgetObjectMixin
+    right_widget_object: WidgetObjectMixin
+    add_item(left_widget: WidgetObjectMixin, right_widget: WidgetObjectMixin)
+    {abstract} get_relative_geomtery(format_: str)
+}
+
+WidgetObjectMixin --|> AbstractWidgetObjectMixin
+ContainerWidgetObjectMixin --|> WidgetObjectMixin
+CompositeWidgetObjectMixin --|> ContainerWidgetObjectMixin
+CompositeWidgetObjectMixin "1" o-- "2" WidgetObjectMixin
+ContainerWidgetObjectMixin "1" o-- "many" WidgetObjectMixin
+
+
+MainWindowWidget --|> ContainerWidgetObjectMixin
+FormBoxContainerWidget --|> ContainerWidgetObjectMixin
+GroupBoxContainerWidget --|> ContainerWidgetObjectMixin
+PushButtonWidget --|> WidgetObjectMixin
+LineEditWidget --|> WidgetObjectMixin
+CheckBoxWidget --|> WidgetObjectMixin
+LabelWidget --|> WidgetObjectMixin
+LabeledCheckBoxFormBoxItemWidget --|> CompositeWidgetObjectMixin
+ReversedLabeledCheckBoxFormBoxItemWidget --|> CompositeWidgetObjectMixin
+@enduml

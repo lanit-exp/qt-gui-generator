@@ -1,0 +1,24 @@
+@startuml
+title widget_geometry module
+
+class WidgetGeometry {
+    x: float
+    y: float
+    width: float
+    height: float
+
+    not_null(): bool
+}
+
+class WidgetGeometryFactory {
+    {static} create_null_widget_geometry(): WidgetGeometry
+    {static} create_merged_geometry(widget1: QWidget, widget2: QWidget): WidgetGeometry
+}
+
+class WidgetGeometryUtils {
+    {static} get_relative_frame_geometry(active_widget: QWidget): QRect
+}
+
+WidgetGeometryFactory --> WidgetGeometryUtils: Use
+WidgetGeometryFactory --> WidgetGeometry: Use
+@enduml

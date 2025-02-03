@@ -1,0 +1,26 @@
+@startuml
+title export_data
+class ExportDataFactory {
+    {static} get_exporter(data_fromat: str, export_path: str): DataExporter
+
+}
+
+abstract DataExporter {
+    dir_path: str
+    {abstract} export(image_feometry_list: List[Tuple[Screenshot, WidgetnameToListofgeometriesDict]])
+    {static} _get_all_widget_names(except_list: List[str])
+    {static} _get_widget_name_to_index_dict()
+}
+
+
+class YoloDataExporter {
+    export(image_feometry_list: List[Tuple[Screenshot, WidgetnameToListofgeometriesDict]])
+}
+
+class CocoDataExporter {
+    export(image_feometry_list: List[Tuple[Screenshot, WidgetnameToListofgeometriesDict]])
+}
+
+YoloDataExporter --|> DataExporter
+CocoDataExporter --|> DataExporter
+@enduml

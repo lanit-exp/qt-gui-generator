@@ -1,0 +1,31 @@
+@startuml
+title pyqtguigen
+
+package generation {
+    class QtDatasetGeneration {
+        generate(data_format: str)
+    }
+
+    class QtGuiGeneration {
+        generate(tree_path: str)
+    }
+
+    QtDatasetGeneration --> QtGuiGeneration: Use
+}
+
+
+
+package screenshot {
+    class Screenshot {
+        width
+        height
+        filename
+    }
+
+    class ScreenshotHandler {
+        take_screenshot(application, active_widget, millis_before_screenshot, millis_before_quit_app)
+    }
+
+    Screenshot --> ScreenshotHandler: Use
+}
+@enduml

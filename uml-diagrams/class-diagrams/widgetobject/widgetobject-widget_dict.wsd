@@ -1,0 +1,15 @@
+@startuml
+title widget_dict module
+
+class WidgetnameToListofgeometriesDict {
+    dict: Dict[str, List[WidgetGeometry]]
+    get_items(): pairs [Key, Value]
+    add_widget_geometry_to_dict(widget_object: AbstractWidgetObjectMixin, format_: str)
+}
+
+class WidgetnameToListofgeometriesDictFactory {
+    {static} create_dict(root_widget: Union[ContainerWidgetObjectMixin, WidgetObjectMixin], output_format: str): WidgetnameToListofgeometriesDict
+}
+
+WidgetnameToListofgeometriesDictFactory --> WidgetnameToListofgeometriesDict: Use
+@enduml

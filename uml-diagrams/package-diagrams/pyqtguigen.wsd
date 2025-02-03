@@ -1,0 +1,32 @@
+@startuml
+title pyqtguigen package diagram
+package export_data 
+package screenshot 
+package generation 
+package widgetobject
+package widget_utils 
+export_data --> screenshot
+export_data --> widgetobject
+export_data --> widget_utils
+export_data --> utils
+
+generation --> guitreegen
+generation --> export_data
+generation --> screenshot
+generation --> widget_utils
+generation --> widgetobject
+generation --> utils
+
+
+
+
+
+screenshot --> widgetobject
+
+widgetobject --> widget_utils
+
+
+
+
+
+@enduml

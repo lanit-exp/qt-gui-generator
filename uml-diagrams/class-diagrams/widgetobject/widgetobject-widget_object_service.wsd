@@ -1,0 +1,15 @@
+@startuml
+title widget_object_service module
+
+class WidgetObjectFactory{
+    {static} create_widget_object(name: str, parent: WidgetObjectMixin): WidgetObjectMixin
+    {static} create_root_widget_object(name: str, number_of_childre: int): ContainerWidgetObjectMixin
+}
+
+class WidgetObjectHandler{
+    {static} get_possible_widget_names(): List[str]
+    {static} get_widget_obj_init_method_by_name(): Callable
+}
+
+WidgetObjectFactory --> WidgetObjectHandler: Use
+@enduml

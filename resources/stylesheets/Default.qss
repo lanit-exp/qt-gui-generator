@@ -1,0 +1,12 @@
+QHeaderView::section
+{
+  background-color: #a1a1a3;
+  font-weight: bold
+}
+
+QTableCornerButton::section
+{
+    background-color: #5d5a63;
+}
+
+

@@ -1,0 +1,12 @@
+@startuml
+title widget_names module
+class WidgetNames: {
+    WINDOW
+    LABEL_LINE_EDIT
+    LABEL_COMBOBOX
+    BUTTON
+    COMBOBOX
+    LABEL
+    etc...
+}
+@enduml

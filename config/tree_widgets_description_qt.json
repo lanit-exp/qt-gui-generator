@@ -1,0 +1,212 @@
+[
+  {
+    "_container": true,
+    "_name": "Window",
+    "_prob": 0.0,
+    "_accept_list": [
+      "LineEditComboboxFormBox",
+      "RadioButtonBox",
+      "CheckboxBox",
+      "GroupBox",
+      "StatusBar",
+      "TabBar",
+      "MenuItem",
+      "Table",
+      "List",
+      "TextArea",
+      "TreeView"
+    ]
+  },
+  {
+    "_container": false,
+    "_name": "StatusBar",
+    "_solo": true,
+    "_prob": 0.01
+  },
+  {
+    "_container": false,
+    "_name": "Table",
+    "_prob": 0.05,
+    "_min_width": 300,
+    "_min_height": 300,
+    "_central_widget_child": true
+  },
+  {
+    "_container": false,
+    "_name": "TextArea",
+    "_prob": 0.02,
+    "_min_width": 300,
+    "_min_height": 300,
+    "_central_widget_child": true
+  },
+  {
+    "_container": false,
+    "_name": "TreeView",
+    "_prob": 0.02,
+    "_min_width": 300,
+    "_min_height": 200,
+    "_central_widget_child": true
+  },
+  {
+    "_container": false,
+    "_name": "List",
+    "_prob": 0.02,
+    "_min_width": 300,
+    "_min_height": 200,
+    "_central_widget_child": true
+  },
+  {
+    "_container": false,
+    "_name": "TabBar",
+    "_solo": true,
+    "_prob": 0.05,
+    "_central_widget_child": true
+  },
+  {
+    "_container": true,
+    "_name": "GroupBox",
+    "_prob": 0.01,
+    "_central_widget_child": true,
+    "_accept_list": [
+      "FromBox",
+      "RadioButtonBox",
+      "CheckboxBox"
+    ]
+  },
+  {
+    "_container": true,
+    "_name": "LineEditComboboxFormBox",
+    "_central_widget_child": true,
+    "_prob": 0.05,
+    "_min_width": 250,
+    "_min_height": 400,
+    "_accept_list": [
+      "LabeledComboBox",
+      "LabeledLineEdit",
+      "TopLabeledLineEdit",
+      "Button"
+    ]
+  },
+  {
+    "_container": true,
+    "_name": "RadioButtonBox",
+    "_central_widget_child": true,
+    "_prob": 0.05,
+    "_min_width": 200,
+    "_min_height": 350,
+    "_accept_list": [
+      "LabeledRadioButton",
+      "ReversedLabeledRadioButton",
+      "TopLabeledRadioButton",
+      "Button"
+    ]
+  },
+  {
+    "_container": true,
+    "_name": "CheckboxBox",
+    "_central_widget_child": true,
+    "_min_width": 200,
+    "_min_height": 350,
+    "_prob": 0.05,
+    "_accept_list": [
+      "LabeledCheckbox",
+      "ReversedLabeledCheckbox",
+      "TopLabeledCheckbox",
+      "Button"
+    ]
+  },
+  {
+    "_container": false,
+    "_name": "Button",
+    "_prob": 0.1,
+    "_central_widget_child": true
+  },
+  {
+    "_container": false,
+    "_name": "LineEdit",
+    "_prob": 0.4
+  },
+  {
+    "_container": false,
+    "_name": "LabeledComboBox",
+    "_central_widget_child": true,
+    "_prob": 0.2
+  },
+  {
+    "_container": false,
+    "_name": "LabeledLineEdit",
+    "_central_widget_child": true,
+    "_prob": 0.2
+  },
+  {
+    "_container": false,
+    "_name": "TopLabeledLineEdit",
+    "_prob": 0.2
+  },
+  {
+    "_container": false,
+    "_name": "LabeledCheckbox",
+    "_prob": 0.2
+  },
+    {
+    "_container": false,
+    "_name": "TopLabeledCheckbox",
+    "_prob": 0.2
+  },
+  {
+    "_container": false,
+    "_name": "ReversedLabeledCheckbox",
+    "_prob": 0.2
+  },
+  {
+    "_container": false,
+    "_name": "LabeledRadioButton",
+    "_prob": 0.2
+  },
+  {
+    "_container": false,
+    "_name": "ReversedLabeledRadioButton",
+    "_prob": 0.2
+  },
+  {
+    "_container": false,
+    "_name": "TopLabeledRadioButton",
+    "_prob": 0.2
+  },
+  {
+    "_container": false,
+    "_name": "MenuItem",
+    "_prob": 0.1
+  },
+  {
+    "_container": false,
+    "_name": "Combobox",
+    "_prob": 0.1,
+    "_central_widget_child": true
+  },
+  {
+    "_container": false,
+    "_name": "TabButton",
+    "_prob": 0.1
+  },
+  {
+    "_container": false,
+    "_name": "ScrollBar",
+    "_prob": 0.1
+  },
+  {
+    "_container": false,
+    "_name": "RadioButton",
+    "_prob": 0.1
+  },
+  {
+    "_container": false,
+    "_name": "Checkbox",
+    "_prob": 0.1
+  },
+  {
+    "_container": false,
+    "_name": "Label",
+    "_prob": 0.1
+  }
+]

@@ -1,0 +1,6 @@
+.idea/*
+venv/*
+otp/*
+trees/*
+**/__pycache__/
+/widget_tree.json

@@ -1,0 +1,25 @@
+@startuml
+title widget_utils
+class UtilsRand {
+    {static} generate_widget_size_vals(gen_range_per_iter_w: Tuple[int, int], gen_range_per_iter_h: Tuple[int, int], n_iter: int, max_w: int, max_h: int): Tuple[int, int]
+    {static} generate_num_random_string(length: int): str
+    {static} generate_alpha_random_string(length: int): str
+    {static} generate_num_random_phrase(min_number_of_words: int, max_number_of_words: int, min_word_len: int, max_word_len: int): str
+    {static} generate_random_html_doc(n_iter: int): str
+}
+
+class QWidgetGeneration {
+    {static} generate_qtable(): QTableWidget
+    {static} generate_labeled_qcheckbox(): Tuple[QLabel, QCheckBox]
+    {static} generate_labeled_qradiobutton(): Tuple[QLabel, QRadioButton]
+    {static} generate_qwindow(layout: QLayout, number_of_children: int): QMainWindow
+    {static} generate_qline_edit(): QLineEdit
+    {static} generate_qgroupbox(): QGroupBox
+    etc...
+}
+
+class WidgetOutputDataFormat{
+    YOLO
+    COCO
+}
+@enduml

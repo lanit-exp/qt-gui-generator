@@ -1,0 +1,23 @@
+QWidget
+{
+	background-color: #247a1c;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+QCheckBox
+{
+    padding: 3px 0px 0px 4px;
+    background: transparent;
+}
+
+QHeaderView::section
+{
+  background-color: #1b5c15;
+  font-weight: bold
+}
+
+QTableCornerButton::section
+{
+    background-color: #133d0f;
+}

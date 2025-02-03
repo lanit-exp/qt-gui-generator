@@ -1,0 +1,55 @@
+/*-----QWidget-----*/
+QWidget
+{
+	background-color: #06527d;
+	color: #dbd9d9;
+
+}
+
+
+/*-----QLabel-----*/
+QLabel
+{
+	background-color: transparent;
+	color: #fff;
+
+}
+
+
+/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(42, 95, 113, 255),stop:1 rgba(12, 53, 97, 255));
+	color: #fff;
+	border: 0px;
+	border-radius: 5px;
+	padding: 4px;
+}
+
+
+/*-----QLineEdit-----*/
+QLineEdit
+{
+	color: #fff;
+	border-style: solid;
+	border-color: #141414;
+	border-radius: 5px;
+}
+
+
+QListView{
+	background-color: transparent;
+	color: #fff;
+}
+
+QTabBar::tab {
+	background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(42, 95, 113, 255),stop:1 rgba(12, 53, 97, 255));
+	color: #fff;
+}
+
+QHeaderView::section { background-color:grey }
+
+QTableCornerButton::section
+{
+    background-color: #5d5a63;
+}
